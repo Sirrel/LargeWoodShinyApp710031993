@@ -1,2 +1,3 @@
+*.tif filter=lfs diff=lfs merge=lfs -text
 *.tif !text !filter !merge !diff
 DTM_Isonzo.tif filter=lfs diff=lfs merge=lfs -text
