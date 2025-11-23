@@ -36,7 +36,7 @@ pal_clusters <- colorFactor(palette = colorRampPalette(brewer.pal(12, "Paired"))
 ## G2 Add Raster Layers ----
 
 # Add heatmap raster
-heatmap <- rast("heatmap_raster_10px.tif")
+heatmap <- rast("heatmap_raster_20px.tif")
 heatmap <- project(heatmap, crs(river))
 pal_heatmap <- colorNumeric(palette = "inferno", domain=na.omit(values(heatmap)), na.color = "transparent")
 
