@@ -104,7 +104,21 @@ output$map <- renderLeaflet({
       values = lw_points$clusters,
       title = "LW Cluster ID",
       opacity = 0.8
-    ) 
+    ) #%>%
+    # addLegend(
+    #   position = "bottomright",
+    #   pal = pal_slope,
+    #   values = values(slope),
+    #   title = "Slope (Degrees)",
+    #   opacity = 0.8
+    # ) %>%
+    # addLegend(
+    #   position = "bottomright",
+    #   pal = pal_aspect,
+    #   values = values(aspect),
+    #   title = "Aspect",
+    #   opacity = 0.8
+    # )
 })
 
 # Add popups for data

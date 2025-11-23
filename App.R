@@ -84,7 +84,7 @@ ui <- navbarPage("Instream large wood on the River Isonzo", id = 'nav',
 
 # Define the server that performs all necessary operations ----
 server <- function(input, output, session){
-  source("Server.R", local = TRUE)
+  source("Server_Function.R", local = TRUE)
 }
 
 # Run the application ----
